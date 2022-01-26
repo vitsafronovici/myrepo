@@ -73,6 +73,3 @@ spec:
             name: {{.Values.name}}
         {{- end}}
         {{- end}}
-      securityContext:
-        seccompProfile:
-          type: RuntimeDefault
