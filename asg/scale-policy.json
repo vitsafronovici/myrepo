@@ -1,1 +1,1 @@
-{"policyName": "testPolicy1", "policyType": "testpolicyType1"}
+{"policyName": "testPolicy1", "adjustmentType":"PercentChangeInCapacity", "scalingAdjustment":30}
