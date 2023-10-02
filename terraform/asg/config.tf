@@ -16,7 +16,7 @@ output "region" {
 }
 
 output "asgName" {
-	value = "choice-demo"
+	value = "choice-demo-base"
 }
 
 output "myVar" {
