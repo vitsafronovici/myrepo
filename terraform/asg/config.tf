@@ -20,11 +20,11 @@ output "asgName" {
 }
 
 output "myVar" {
-  value = "myValue"
+  value = "myValue2"
 }
 
 output "loadBalancer" {
-  value = "vit3-elb"
+  value = "vit3-elb2"
 }
 
 output "prodListener" {
