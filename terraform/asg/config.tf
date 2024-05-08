@@ -1,5 +1,9 @@
-variable "access_key" {}
-variable "secret_key" {}
+variable "access_key" {
+  default = "AKIAZV4A45DTKQBV43XN"
+}
+variable "secret_key" {
+  default = "xxx"
+}
 variable "region" {
   default = "us-east-1"
 }
@@ -12,19 +16,23 @@ provider "aws" {
 }
 
 output "region" {
-	value = "${var.region}"
+  value = "${var.region}"
 }
 
 output "asgName" {
-	value = "choice-demo-base"
+  value = "vitwithlaunch"
+}
+
+output "vpcIds" {
+  value = ["vpc-0ed86ccd8b4a7795e", "vpc-0c5b9086ccea05263"]
 }
 
 output "myVar" {
-  value = "myValue2"
+  value = "myValue"
 }
 
 output "loadBalancer" {
-  value = "vit3-elb2"
+  value = "vit3-elb"
 }
 
 output "prodListener" {
