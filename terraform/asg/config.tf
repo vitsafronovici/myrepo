@@ -20,7 +20,7 @@ output "region" {
 }
 
 output "asgName" {
-  value = "vitwithlaunch3"
+  value = "vitwithlaunch4"
 }
 
 output "vpcIds" {
