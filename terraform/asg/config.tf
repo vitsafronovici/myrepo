@@ -38,3 +38,8 @@ output "loadBalancer" {
 output "prodListener" {
   value = "arn:aws:elasticloadbalancing:us-east-1:806630305776:listener/app/vit3-elb/59734084df74f16a/e80c02a9f90639e6"
 }
+
+output "v1" {
+  value = "v1"
+}
+
