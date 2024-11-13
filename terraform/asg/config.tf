@@ -7,6 +7,9 @@ variable "secret_key" {
 variable "region" {
   default = "us-east-1"
 }
+variable "myvar" {
+  default = "us-east-1"
+}
 
 provider "aws" {
   access_key = "${var.access_key}"
