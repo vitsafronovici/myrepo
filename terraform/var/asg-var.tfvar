@@ -1,1 +1,3 @@
 region = "my region"
+
+myvar = "my var val"
