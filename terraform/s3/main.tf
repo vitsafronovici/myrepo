@@ -11,11 +11,13 @@ resource "aws_instance" "ec2_example" {
 }
 
 terraform {
-    backend "s3" {
-        bucket = "vit-s3-bucket"
-        key    = "vit/terraform/remote/s3/terraform.tfstate"
-        region     = "us-east-1"
-        dynamodb_table = "vit-lock"
-    }
+  backend "http" {
+    address = "https://vitsafrov.pr2.harness.io/gateway/iacm/api/orgs/default/projects/vit/workspaces/w5/terraform-backend?accountIdentifier=cK8RtyzWTPS2DF98iz_nhA"
+    username = "harness"
+    lock_address = "https://vitsafrov.pr2.harness.io/gateway/iacm/api/orgs/default/projects/vit/workspaces/w5/terraform-backend/lock?accountIdentifier=cK8RtyzWTPS2DF98iz_nhA"
+    lock_method = "POST"
+    unlock_address = "https://vitsafrov.pr2.harness.io/gateway/iacm/api/orgs/default/projects/vit/workspaces/w5/terraform-backend/lock?accountIdentifier=cK8RtyzWTPS2DF98iz_nhA"
+    unlock_method = "DELETE"
+  }
 }
 
