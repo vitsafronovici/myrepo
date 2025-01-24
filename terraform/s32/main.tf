@@ -1,3 +1,17 @@
+variable "access_key" {
+  default = "AKIAZV4A45DTKQBV43XN"
+}
+variable "secret_key" {
+  default = "xxx"
+}
+variable "region" {
+  default = "us-east-1"
+}
+variable "myvar" {
+  default = "us-east-1"
+}
+
+
 provider "aws" {
   region                   = "us-east-1"
 }
