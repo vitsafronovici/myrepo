@@ -1,7 +1,7 @@
-variable "access_key" {
+variable "access_key2" {
   default = "AKIAZV4A45DTKQBV43XN"
 }
-variable "secret_key" {
+variable "secret_key2" {
   default = "xxx"
 }
 variable "region" {
