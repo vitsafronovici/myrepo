@@ -21,6 +21,7 @@ resource "aws_instance" "ec2_example" {
     instance_type = "t2.micro"
     tags = {
       Name = "EC2 Instance with remote state tag v33"
+      Description = "${var.myvar}"
     }
 }
 
