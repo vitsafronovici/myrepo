@@ -16,12 +16,16 @@ provider "aws" {
   region                   = "us-east-1"
 }
 
+data "aws_instance" "selected" {
+  instance_id = "i-0d6f894645a4458b2"
+}
+
 resource "aws_instance" "ec2_example" {
     ami = "ami-0305d0b03812a425e"
     instance_type = "t3.micro"
     tags = {
-      Name = "EC2 Instance with remote state tag ds"
-      Description = "${var.myvar}"
+      Name = "EC2 Instance with remote state tag ds2"
+      Description = data.aws_instance.selected.instance_type
     }
 }
 
