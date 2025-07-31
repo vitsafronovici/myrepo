@@ -15,7 +15,7 @@ terraform {
 # #Provider and creds
 provider "aws" {
   region = "us-east-1"
-#  alias  = "awsuse1"
+  alias  = "awsuse1"
 }
 
 provider "aws" {
