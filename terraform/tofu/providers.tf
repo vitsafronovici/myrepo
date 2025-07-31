@@ -18,10 +18,10 @@ provider "aws" {
 #  alias  = "awsuse1"
 }
 
-#provider "aws" {
-#  region = "us-east-2"
-#  alias  = "awsuse2"
-#}
+provider "aws" {
+  region = "us-east-2"
+  alias  = "awsuse2"
+}
 
 provider "awscc" {
   region = "us-east-1"
