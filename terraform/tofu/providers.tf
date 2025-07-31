@@ -12,7 +12,11 @@ terraform {
   }
 }
 
-# #Provider and creds
+# default aws provider
+provider "aws" {
+  region = "us-east-1"
+}
+
 provider "aws" {
   region = "us-east-1"
   alias  = "awsuse1"
@@ -23,8 +27,18 @@ provider "aws" {
   alias  = "awsuse2"
 }
 
+# default awscc provider
 provider "awscc" {
   region = "us-east-1"
-#  alias  = "awsccuse1"
+}
+
+provider "awscc" {
+  region = "us-east-1"
+  alias  = "awsccuse1"
+}
+
+provider "awscc" {
+  region = "us-east-2"
+  alias  = "awsccuse2"
 }
 
