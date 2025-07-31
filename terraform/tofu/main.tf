@@ -7,5 +7,5 @@ resource "aws_instance" "ec2_example" {
 }
 
 resource "awscc_s3_bucket" "example" {
-  bucket_name = "my-simple-awscc-bucket-1234"
+  bucket_name = "my-simple-awscc-bucket-1234x1"
 }
