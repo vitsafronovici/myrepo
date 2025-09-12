@@ -1,0 +1,23 @@
+---
+- name: Simple Ansible Playbook Example
+  hosts: webservers        # Target group from your inventory
+  become: true             # Run tasks with sudo/root privileges
+
+  tasks:
+    - name: Update all packages
+      ansible.builtin.apt:
+        update_cache: yes
+        upgrade: dist
+      when: ansible_os_family == "Debian"
+
+    - name: Install nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: Ensure nginx is running
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
