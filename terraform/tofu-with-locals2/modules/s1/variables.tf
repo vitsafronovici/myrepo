@@ -11,3 +11,4 @@ variable "rootloc" {
 variable "root_tags" {
   type = map(string)
 }
+

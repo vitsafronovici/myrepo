@@ -10,6 +10,7 @@ resource "aws_instance" "ec2_example" {
         rootloc = var.rootloc
         region_short = local.region_short
         vpc_search_pattern = local.vpc_search_pattern
+        azs_len = length(local.azs)
       }
     )
 
