@@ -16,6 +16,9 @@ variable "myvar2" {
 variable "myvar3" {
   default = "default3"
 }
+variable "myvarsecret" {
+  default = "myvarsecret"
+}
 
 
 provider "aws" {
