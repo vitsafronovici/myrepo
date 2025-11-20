@@ -34,5 +34,6 @@ resource "aws_instance" "ec2_example" {
       Region = var.region
       myvar2 = var.myvar2
       myvar3 = var.myvar3
+      myvarsecret = var.myvarsecret
     }
 }
