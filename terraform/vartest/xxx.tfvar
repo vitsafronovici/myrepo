@@ -1,0 +1,7 @@
+region = "my region"
+
+myvar = "my var val xx"
+
+myvar2 = "my var val2 xx"
+
+myvar3 = "var3 from file xx"
