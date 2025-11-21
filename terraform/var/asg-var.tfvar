@@ -4,4 +4,4 @@ myvar = "my var val"
 
 myvar2 = "my var val2"
 
-#myvar3 = "my var val3"
+myvar3 = "var3 from file"
