@@ -9,3 +9,7 @@ output "ami" {
 output "instance_type" {
   value = aws_instance.example.instance_type
 }
+
+output "id" {
+  value = aws_instance.example.id
+}

@@ -16,3 +16,7 @@ output "ami" {
 output "instance_type" {
   value = module.m1.instance_type
 }
+
+output "id" {
+  value = module.m1.id
+}
