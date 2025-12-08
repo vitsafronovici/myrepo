@@ -10,7 +10,7 @@ output "env" {
 }
 
 output "ami" {
-  value = module.m1.ami
+value = module.m1.ami
 }
 
 output "instance_type" {
